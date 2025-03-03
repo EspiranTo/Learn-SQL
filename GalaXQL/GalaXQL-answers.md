@@ -57,7 +57,7 @@ Hilight five stars which have star id between 5000 and 15000, and have class 7.
 Hilight all the stars with starid between 10000 and 11000. (I know, this is not too difficult, but it looks neat).
 ```sql
   INSERT INTO hilight SELECT starid FROM stars
-					    WHERE starid BETWEEN 10000 AND 11000;
+	  WHERE starid BETWEEN 10000 AND 11000;
 ```
 ## Transactions, DELETE FROM WHERE
 Kill off all stars with starid lower than 10000. Do this inside a transaction, so that when I run the ROLLBACK command, we're back with the original galaxy.
